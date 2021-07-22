@@ -1,0 +1,6 @@
+1)Difference between statically typed and dynamically typed languages:
+When a data type for a variable is not mentioned, Statically typed languages need a compiler before running. It shows compilation errors, dynamically typed languages shows only run time errors. 
+2)Scripting language vs programing language:
+Basically, all scripting languages are programming languages. The theoretical difference between the two is that scripting languages do not require the compilation step and are rather interpreted. For example, normally, a C program needs to be compiled before running whereas normally, a scripting language like JavaScript or PHP need not be compiled.
+3)Difference between HTTP/1.1 and HTTP2
+the primary difference is that, HTTP/1.1 sends or recieves requests in only plain text format but HTTP2 does this in binary code format. HTTP2 is faster and reduces the errors.
