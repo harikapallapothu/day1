@@ -12,10 +12,78 @@
 
 2)Scripting language vs programing language:
 
-    Basically, all scripting languages are programming languages. 
-    The theoretical difference between the two is that scripting languages do not require the compilation step and are rather interpreted. 
-    For example, normally, a C program needs to be compiled before running whereas normally, a scripting language like JavaScript or PHP need not be compiled.
+   Programming Language
+A programming language is a computer language that is used to communicate with computers using a set of instructions.
+It is compiled language or compiler-based language.
+It is used to develop an application or software from scratch.
+It runs or executes independently and does not depend on the parent (exterior) program.
+It uses a compiler to convert source code into machine code.
+As it uses a compiler, hence the complete program is converted into machine code in one shot.
+These languages are required to be compiled.
+It is comparatively difficult to write code in a programming language, and it requires numerous lines of code for each task.
+The development time in programming languages is high as more lines are required.
+There is the high maintenance cost.
+All programming languages are not scripting languages
+It generates a .exe file.
+Usually, programming languages do not support or provide very little support for user interface designing, data types, and graphic designing.
+Some popular examples are C, C++, Java, Scala, COBOL, etc.
+
+Scripting Language
+A scripting language is a type of programming language designed for a runtime system to automate the execution of tasks.
+It is interpreted language or interpreter-based language
+It is used to combine existing components and automate a specific task.
+It runs or executes inside another program.
+It uses an interpreter to convert source code into machine code.
+As it uses an interpreter, hence the program is converted into machine code line by line.
+There is no need for compilation.
+It is comparatively easy to write code in the scripting language, and it requires few lines of code for each task.
+The development time in a scripting language as a smaller number of lines are required.
+There is less maintenance cost.
+All scripting languages are programming languages
+It does not create a .exe file.
+Scripting languages provide great support to user interface design, data types, and graphic design.
+Some popular examples are Perl, Python, JavaScript, etc.
+
 3)Difference between HTTP/1.1 and HTTP2:
 
-    The primary difference is that, HTTP/1.1 sends or recieves requests in only plain text format but HTTP2 does this in binary code format. 
-    HTTP2 is faster and reduces the errors.
+   HTTP: Hypertext Transfer Protocol
+•	HTTP was invented by Tim Berners-Lee at CERN in the years 1989–1991. 
+•	It is the underlying communication protocol of World Wide Web. 
+•	HTTP functions as a request–response protocol in the client–server computing model. 
+•	HTTP standards are developed by the Internet Engineering Task Force(IETF) and the World Wide Web Consortium (W3C), culminating in the publication of a series of Requests for Comments (RFCs). 
+•	HTTP has four versions — HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2.0. 
+•	Now, the version in common use is HTTP/1.1 and the future will be HTTP/2.0.
+HTTP/0.9 — The One-line Protocol
+•	Initial version of HTTP — a simple client-server, request-response, telenet-friendly protocol
+•	Request nature: single-line (method + path for requested document)
+•	Methods supported:  GET only
+•	Response type: hypertext only
+•	Connection nature: terminated immediately after the response
+•	No HTTP headers (cannot transfer other content type files), No status/error codes, No URLs, No versioning
+HTTP/1.0 — Building extensibility
+•	Browser-friendly protocol
+•	Provided header fields including rich metadata about both request and response (HTTP version number, status code, content type)
+•	Response: not limited to hypertext (Content type header provided ability to transmit files other than plain HTML files — e.g. scripts, stylesheets, media)
+•	Methods supported: GET, HEAD, POST
+•	Connection nature: terminated immediately after the response
+Drawbacks of HTTP/0.9 and HTTP/1.0
+•	Both HTTP/0.9 and HTTP/1.0 required to open up a new connection for each request (and close it immediately after the response was sent). 
+•	Each time a new connection establishes, a TCP three-way handshake should also occur. 
+•	For better performance, it was crucial to reduce these round-trips between client and server. 
+•	HTTP/1.1 solved this with persistent connections.
+HTTP/1.1 — The standardized protocol
+•	This is the HTTP version currently in common use.
+•	Introduced critical performance optimizations and feature enhancements — persistent and pipelined connections, chunked transfers, compression/decompression, content negotiations, virtual hosting (a server with a single IP Address hosting multiple domains), faster response and great bandwidth savings by adding cache support.
+•	Methods supported: GET , HEAD , POST , PUT , DELETE , TRACE , OPTIONS
+•	Connection nature: long-lived
+HTTPS
+•	Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP. It uses SSL/TLS for secure encrypted communications.
+•	Originally developed by Netscape in mid-1990s, SSL (Secure Socket Layer) is a cryptographic protocol enhancement to HTTP, which defines how client and server should communicate with each other securely. TLS (Transport Layer Security) is the successor of SSL.
+•	An HTTPS connection can protect the data transfer from the man-in-the-middle attacks and common security threats by providing bidirectional encryption for communications between a client and server.
+ 
+•	Although HTTPS is secure by its design, the SSL/TLS handshake process consumes a significant time before establishing an HTTPS connection. It normally costs 1–2 seconds and drastically slows down the startup performance of a website.
+HTTP/2.0 and the future
+•	All above features are being used by major web servers and browsers today. 
+•	But modern enhancements like HTTP/2.0, Server Side Events (SSE), and Websockets have changed the way that the traditional HTTP works. 
+
+
